@@ -1,0 +1,62 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 0 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: relative;
+  z-index: 10;
+}
+
+/* Логотип */
+.navbarLogo {
+  display: flex;
+  align-items: center;
+}
+
+.logoIcon {
+  font-size: 24px;
+  color: #1890ff;
+  margin-right: 8px;
+}
+
+.logoText {
+  margin: 0;
+  line-height: 1;
+  font-weight: 600;
+  color: #000;
+}
+
+/* Десктоп-меню */
+.navbarMenu {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  border-bottom: none;
+}
+
+/* Кнопка входа */
+.loginButton {
+  display: inline-block;
+}
+
+/* Иконка бургер-меню — по умолчанию скрыта */
+.burgerIcon {
+  display: none;
+}
+
+/* Медиа-запрос для адаптива */
+@media (max-width: 768px) {
+  .navbarMenu {
+    display: none;
+  }
+
+  .loginButton {
+    display: none;
+  }
+
+  .burgerIcon {
+    display: inline-block;
+  }
+}

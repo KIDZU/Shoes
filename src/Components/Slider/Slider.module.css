@@ -1,0 +1,55 @@
+.sliderContainer {
+  position: relative;
+  max-width: 60%;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.carousel {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.slideImage {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.sliderArrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 28px;
+  color: #000;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.sliderArrow:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.sliderArrow.left {
+  left: -75px;
+}
+
+.sliderArrow.right {
+  right: -75px;
+}
+
+@media (max-width: 768px) {
+  .slideImage {
+    height: 250px;
+  }
+
+  .sliderArrow {
+    font-size: 20px;
+    padding: 6px;
+  }
+}

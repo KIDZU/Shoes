@@ -1,0 +1,21 @@
+.productCard {
+  margin: 16px auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.productCard img {
+  height: 200px;
+  object-fit: contain;
+}
+
+.price {
+  display: block;
+  margin: 8px 0;
+  font-size: 16px;
+  color: #1890ff;
+}
+
+.rating {
+  margin-top: 8px;
+}
